@@ -1,0 +1,17 @@
+name: Test Docker image action
+on:
+  push:
+  
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  test-from-source:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: kyanny/hello-world-docker-action@latest
+
+  test-from-image:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: docker://ghcr.io/kyanny/hello-world-docker-action:latest
