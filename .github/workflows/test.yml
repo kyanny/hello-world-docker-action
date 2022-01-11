@@ -11,7 +11,7 @@ jobs:
   test-from-source:
     runs-on: ubuntu-latest
     steps:
-      - uses: kyanny/hello-world-docker-action@0.1.1
+      - uses: kyanny/hello-world-docker-action@v0.1.1
 
   test-from-image:
     runs-on: ubuntu-latest
